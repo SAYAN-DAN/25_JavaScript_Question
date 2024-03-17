@@ -1,0 +1,1 @@
+1 - Given a String reverse eash word in the sentence.
