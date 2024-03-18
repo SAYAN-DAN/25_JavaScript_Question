@@ -1,0 +1,41 @@
+function getType(value) {
+    return typeof value;
+}
+
+// Example usage:
+console.log(getType(5)); // Output: "number"
+console.log(getType("hello")); // Output: "string"
+console.log(getType(true)); // Output: "boolean"
+console.log(getType({})); // Output: "object"
+console.log(getType(function() {})); // Output: "function"
+console.log(getType(undefined)); // Output: "undefined"
+console.log(getType([]));
+console.log(getType(null));
+console.log(getType(new Date())); // Output: "object"
+console.log(getType(Symbol())); // Output: "symbol"
+console.log(getType(Infinity)); // Output: "number"
+console.log(getType(NaN)); // Output: "number"
+console.log(getType(123n)); // Output: "bigint"
+console.log(getType(/regex/)); // Output: "object"
+console.log(getType(new Map())); // Output: "object"
+console.log(getType(new Set())); // Output: "object"
+console.log(getType(document.createElement('div'))); // Output: "object"
+console.log(getType(document)); // Output: "object"
+console.log(getType(window)); // Output: "object"
+console.log(getType(new XMLHttpRequest())); // Output: "object"
+console.log(getType(new Error())); // Output: "object"
+console.log(getType(new Int8Array())); // Output: "object"
+console.log(getType(new Uint8Array())); // Output: "object"
+console.log(getType(new Float32Array())); // Output: "object"
+console.log(getType(new Set([1, 2, 3]))); // Output: "object"
+console.log(getType(new Map([[1, 'one'], [2, 'two']]))); // Output: "object"
+console.log(getType(BigInt(123))); // Output: "bigint"
+console.log(getType(Symbol.iterator)); // Output: "symbol"
+console.log(getType(Buffer.from('hello'))); // Output: "object"
+console.log(getType(new Promise(() => {}))); // Output: "object"
+console.log(getType(new WeakMap())); // Output: "object"
+console.log(getType(new WeakSet())); // Output: "object"
+console.log(getType(new ArrayBuffer(16))); // Output: "object"
+console.log(getType(new DataView(new ArrayBuffer(16)))); // Output: "object"
+console.log(getType(new URLSearchParams('foo=bar&baz=qux'))); // Output: "object"
+console.log(getType(new Error('Something went wrong'))); // Output: "object"
